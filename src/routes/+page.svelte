@@ -10,7 +10,7 @@
 			getTodos.override((todos) => [...todos, { id: 0, text, done: false }]);
 			const { apply } = await submit();
 			apply();
-			// this was we only refresh the list of todos, and no other queries on the page
+			// this way we only refresh the list of todos, and no other queries on the page
 			getTodos.refresh();
 		})}
 	>
